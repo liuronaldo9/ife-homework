@@ -1,0 +1,481 @@
+/*
+* @Author: lol
+* @Date:   2017-03-14 19:18:08
+* @Last Modified by:   lol
+* @Last Modified time: 2017-03-14 20:02:20
+*/
+*{
+    margin:0;
+    padding:0;
+}
+
+a {
+    color: #443;
+    text-decoration:none;
+    transition-duration: 0.3s;
+}
+
+#container{
+    width:100%;
+    height:2000px;
+}
+#container section{
+    width:100%;
+    height:60px;
+    
+}
+#xinshijie{
+    height:32px;
+    position:absolute;
+    top:14px;
+    left:30px;
+    text-align:center;
+    background-image:url(image/love_256.png);
+    background-repeat:no-repeat;
+    background-size:31%;
+}
+#xinshijie p{    
+    line-height:32px;  
+    color:#444;  
+    font-size:24px;
+    padding-left:34px;
+}
+#nav{
+    position:absolute;
+    right:100px;
+    
+}
+#nav a{
+    font-size:16px;
+    margin:0 5px;
+    padding:19px 0;
+    line-height:60px;
+}
+#nav a:hover{
+    color:#f11;
+    border-bottom:2px solid #f11;
+    
+}
+#denglu{
+    position:absolute;
+    right:20px;
+    margin-top:14px;
+    height:32px;
+    line-height:32px;
+}
+#denglu img{
+    vertical-align:middle;
+}
+#denglu a:hover{
+    color:#f11;
+}
+
+
+#kaishitiyan{
+    width:100%;
+    min-width:960px;
+    min-height:540px;
+    background:#f33 url(image/img1.jpg);
+    background-repeat:no-repeat;
+   background-size:100%;
+}
+#kaishitiyanContainer {
+    position:absolute;
+    left:129px;
+    top:300px;
+}
+#kaishitiyan h2{
+    color:#fff;
+    font-size:52px;
+}
+#kaishitiyan p{
+    margin-top:10px;
+    font-size:22px;
+    color:#ddd;
+}
+#kaishitiyan #tiyanBtn {
+    width: 280px;
+    height: 60px;
+    color: #eee;
+    text-align: center;
+    font-size: 34px;
+    line-height: 60px;
+    background-color: #e74f4d;
+    margin-top: 80px;
+    cursor:pointer;
+}
+
+#logo{
+    margin-top:20px;
+}
+#logoImage{
+    height:70px;
+    margin:20px 0 ;
+}
+#logoImage div{
+    width:24%;
+    float:left;
+    text-align:center;
+}
+#logoImage img{
+    width:64px;
+    height:64px;
+    
+}
+#logoDownText {
+    height: 70px;
+    margin: 20px 0;
+}
+#logoDownText div{
+    width:24%;
+    border-right:1px solid #444;
+    float:left;
+    text-align:center;
+}
+#logoDownText div:last-child{
+    border:none;
+}
+#logoDownText div p{
+
+    word-wrap:break-word;
+    word-break:break-word;
+}
+
+#guanyuxinshijie {
+    text-align: center;
+    background: #f7f7f7;
+}
+#guanyuxinshijie img{
+    margin:30px 0;
+}
+#guanyuxinshijie h1{
+    font-size:64px;
+    color:#aaa;
+    padding-bottom:20px;
+}
+
+#search{
+    width:100%;
+    height:400px;
+    text-align:center;
+    background-image:url(image/img2.jpg);
+    background-repeat:no-repeat;
+
+}
+#search p:first-of-type{
+    color:#fff;
+    font-size:48px;
+}
+#search p:last-of-type{
+    margin-top:14px;
+    color:#eee;
+    font-size:24px;
+}
+hr{
+    width:50px;
+    margin:0 auto;
+}
+#search #searchForm{
+    margin-top:80px;
+}
+#search #searchForm select{
+    width:200px;
+    height:30px;
+    margin:0 20px;
+    color:#999;
+    -webkit-appearance:none;
+    background-image:url(image/love_256.png);
+    background-size:14%;
+    background-repeat:no-repeat;
+    background-position:170px;
+}
+
+#search #searchBtn{
+    vertical-align:middle;
+    display:inline-block;
+    line-height:30px;
+    color:#fff;
+    background:#f33;
+    margin:0 20px;
+    width:200px;
+    height:30px;
+    cursor:pointer;
+}
+
+#huodongContainer{
+    width:100%;
+    height:420px;
+    background:#f7f7f7;
+    text-align:center;
+}
+#huodongContainer img{
+    width:200px;
+    height:300px;
+}
+#huodongSection{
+    width:1200px;
+    height:380px;
+    position:absolute;
+    margin:20px auto;
+    left:50%;
+    margin-left:-600px;
+}
+#huodongSection div{
+    width:24%;
+    float:left;
+}
+#huodongSection div img{
+    padding:8px 5px;
+    background:#fff;
+    border:0.5px solid #ccc; 
+}
+
+#tupian{
+    width:100%;
+    height:1000px;
+    min-width:1400px;
+}
+
+#f1{
+    height:540px;
+    width:1400px;
+    margin:0 auto;
+}
+ #f1 div,#f2 div{
+    float:left;
+}
+#t1{
+    height:540px;
+    width:960px;
+    text-align:center;
+    color:white;
+    background-image:url(image/img2.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+#t1 p{
+    margin-top:10px;
+}
+#t1 p:first-of-type{
+    margin-top:100px;
+    font-size:48px;
+}
+#t1 p:nth-of-type(2){
+    font-size:96px;
+}
+#t1 p:nth-of-type(3),#t1 p:nth-of-type(4){
+    font-size:24px;
+}
+#t2{
+    width:440px;
+    height:540px;
+    background:#fff;
+    text-align:center;
+}
+#t2 h3{
+    margin-top:110px;
+}
+#t2 p{
+    margin-top:20px;
+    font-weight:100;
+}
+#t2 div,#t3 div,#t4 div{
+    width:200px;
+    height:50px;
+    position:relative;
+    left:50%;
+    margin-left:-100px;
+    margin-top:50px;
+    color:red;
+    line-height:50px;
+    text-align:center;
+    border:1px solid red;
+}
+#f2 {
+    height: 540px;
+    width: 1400px;
+    margin: 0 auto;
+}
+#t3 {
+    width: 480px;
+    height: 460px;
+    background: #e7504d;
+    text-align:center;
+    color:white;
+}
+#t3 p:first-of-type,#t4 p:first-of-type{
+    margin-top:150px;
+}
+#t3 hr,#t4 hr{
+    margin-top:25px;
+    margin-bottom:25px;
+}
+#t3 div{
+    margin-top:0;
+    color:white;
+    border-color:white;
+}
+#t4 {
+    width: 480px;
+    height: 460px;
+    background: white;
+    text-align: center;
+    color: black;
+}
+#t4 div {
+    margin-top: 0;
+}
+#t5 {
+    width: 440px;
+    height: 460px;
+    background-image:url(image/img3.jpg);
+    background-repeat:no-repeat;
+    background-size:auto;
+}
+
+#myForm{
+    width:100%;
+    height:800px;
+    overflow:hidden;
+}
+#formContainer{
+    width:1200px;
+    height:600px;
+    margin:0 auto;
+    margin-top:100px;
+}
+#formTitle{
+    width:100%;
+    height:200px;
+    text-align:center;
+    overflow:hidden;
+}
+#formTitle h3{
+    font-size:48px;
+    font-weight:normal;
+    margin-top:60px;
+}
+#formLeft {
+    width: 350px;
+    height: 400px;
+    float: left;
+    margin-right:50px;
+}
+#formLeft #fl1,#formLeft #fl2,#formLeft #fl3{
+    margin-top:20px;
+}
+#formLeft p{
+    margin-top:20px;
+    height:40px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+#formLeft h5{
+    font-size:20px;
+}
+#formLeft .more{
+    float:right;
+    font-size:14px;
+    margin-right:10px;
+}
+
+#formBody {
+    width: 800px;
+    height: 400px;
+    float:left;
+}
+#formBody .inputContainer1{
+    width:370px;
+    height:50px;
+    background:#ddd;
+    border-radius:3px;
+    float:left;
+    line-height:50px;
+    padding-left:20px;
+}
+
+#formBody .inputContainer1:nth-of-type(2n+1){
+    margin-right:20px;
+    margin-bottom:20px;
+}
+#formBody #inputTa{
+    width:780px;
+    height:150px;
+    padding-left:20px;
+    background:#ddd;
+    overflow:hidden;
+     border-radius:3px;
+     margin-bottom:20px;
+}
+input {
+    border:none;
+    background:#ddd;
+}
+textarea {
+    border: none;
+    background: #ddd;
+}
+#formBody #inputSubmit{
+    width:800px;
+    height:50px;
+    background:#ddd;
+    border-radius:3px;
+    line-height:50px;
+    text-align:center;
+}
+#contact {
+    width: 100%;
+    min-width: 1200px;
+    height: 300px;
+    background: #32363e;
+    text-align:center;
+    color:white;
+    overflow:hidden;
+}
+#contact h3{
+    margin-top:60px;
+}
+#contact p{
+    margin-top:10px;
+}
+#contact input[type="search"]{
+    margin-top:35px;
+    width:400px;
+    height:38px;
+    color:#ddd;
+    background:white;
+}
+#contact button{
+    border:none;
+    background:#999;
+    width:80px;
+    height:38px;
+    color:white;
+}
+#contact #contactLogo{
+    margin-top:20px;
+}
+#contact img{
+    width:48px;
+    height:48px;
+}
+
+#footer {
+    width: 100%;
+    height: 40px;
+    padding-top:20px;
+    background: #2f2f38;
+    
+}
+#footer a{
+    color:white;
+}
+#footer div:first-of-type{
+    float:left;
+    margin-left:100px;
+}
+#footer div:last-of-type{
+    float:right;
+    margin-right:70px;
+}
