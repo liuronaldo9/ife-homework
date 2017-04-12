@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    text-align:center;
 }
 a{
     text-decoration:none;
@@ -12,6 +13,9 @@ ul {
 #container {
     position: relative;
     color:#eed;
+    background:#eee;
+    left:50%;
+   border:1px solid #333;
 }
 #container ul{
     position:absolute;
@@ -39,6 +43,7 @@ ul {
     border-width:6px;
     border-style: solid;
     border-color:#acc transparent transparent  transparent;
+    border-top-color:#acc;
 }
 #container ul:first-of-type li::after{
     content:"";
