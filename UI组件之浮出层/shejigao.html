@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">        
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+</head>
+<body>
+    <img src="image/img1.jpg" alt="img1" title="img1" height="100%" />  
+</body>
+<script src="fudongceng.js"></script> 
+<script>
+    /*
+    var FuDong = function (targetDom, options) {
+
+        if (!(this instanceof FuDong)) {
+            //console.log(this);
+            return new FuDong(targetDom, options);
+        }
+
+        //this.target
+        if (typeof (targetDom) === "string") {
+            this.targetDom = document.querySelector(targetDom);
+        } else {
+            this.targetDom = targetDom;
+        }
+        //this.options
+        this.options = options;
+        //this.boxDom
+        var boxDom = document.createElement("div");
+        var imgDom = document.createElement("img");
+        boxDom.style.cssText = "display:none;z-index=999;position:fixed;top:0px;width:100%;height:100%;background:rgba(100,100,100,0.5)"
+        imgDom.style.cssText = "";
+        if (this.options.boxDomStyle) {
+            boxDom.style.cssText = this.options.boxDomStyle;
+        }
+        if (this.options.imgDomStyle) {
+            imgDom.style.cssText = this.options.imgDomStyle;
+        }
+        imgDom.src = this.options.imgSrc;
+        boxDom.appendChild(imgDom);
+        this.boxDom = boxDom;
+        //initial
+        this.init();
+    };
+    //prototype
+    FuDong.prototype = {
+        init: function () {
+            this.event();
+        },
+        event: function () {
+            var _this = this;
+
+            this.targetDom.addEventListener("click", function () {
+                document.body.appendChild(_this.boxDom);
+                _this.boxDom.style.display = "block";
+                //open
+            },false);
+            this.boxDom.addEventListener("click", function () {
+                this.style.display = "none";
+                //close
+            },false);
+        }
+    };
+    */
+
+    FuDong("img", { });
+    
+    
+</script>
+</html>
