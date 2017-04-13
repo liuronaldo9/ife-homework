@@ -17,14 +17,18 @@
         var boxDom = document.createElement("div");
         var fudongDom = document.createElement("div");
         boxDom.style.cssText = "display:none;z-index=999;position:fixed;top:0px;width:100%;height:100%;background:rgba(100,104,103,0.5)";
-        fudongDom.style.cssText = "display:block;z-index=1000;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:300px;height:200px;background:#bde";
+        fudongDom.style.cssText = "display:none;z-index=1000;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:300px;height:200px;background:#bde;text-align:center;";
+        fudongDom.innerHTML = "this is float layer";
         if (this.options.boxDomStyle) {
             boxDom.style.cssText = this.options.boxDomStyle;
         }
         if (this.options.fudongDomStyle) {
             fudongDom.style.cssText = this.options.fudongDomStyle;
         }
-        boxDom.appendChild(fudongDom);
+        if (this.options.fudongDomText) {
+            fudongDom.innerHTML = fudongDomText;
+        }
+        this.fudongDom = fudongDom;
         this.boxDom = boxDom;
         //initial
         this.init();
@@ -39,11 +43,14 @@
 
             this.targetDom.addEventListener("click", function () {
                 document.body.appendChild(_this.boxDom);
+                document.body.appendChild(_this.fudongDom);
                 _this.boxDom.style.display = "block";
+                _this.fudongDom.style.display = "block";
                 //open
             },false);
             this.boxDom.addEventListener("click", function () {
                 this.style.display = "none";
+                _this.fudongDom.style.display = "none";
                 //close
             },false);
         }
