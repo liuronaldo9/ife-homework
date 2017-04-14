@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="main.css" rel="stylesheet"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            #container{
+                width:390px;
+                height:100px;
+                background:#eee;
+                border:1px solid #ccc;
+                padding:10px;
+            }
+            #show {
+                position:relative;
+                width: 370px;
+                height: 50px;
+                background: #ffe;
+                border: 1px solid #ddd;
+                margin-top:5px;
+                overflow:hidden;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div id="container">
+            模拟队列
+            <form>
+                <input type="text" id="text" placeholder="在这输入" />
+                <input type="button" value="左侧入" />
+                <input type="button" value="左侧出" />
+                <input type="button" value="右侧入" />
+                <input type="button" value="右侧出" />
+            </form>
+            <div id="show">
+
+            </div>
+        </div> 
+        
+    </body>
+<script src="main.js">
+    
+</script>
+</html>
