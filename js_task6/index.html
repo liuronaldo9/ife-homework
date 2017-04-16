@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="main.css" rel="stylesheet"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            #container{
+                width:390px;
+                height:300px;
+                background:#eee;
+                box-sizing:border-box;
+                border:1px solid #ccc;
+                padding:10px;
+            }
+            textarea{
+                width:370px;
+                height:100px;
+                box-sizing:border-box;
+            }
+            #show {
+                position:relative;
+                width: 370px;
+                height: 100px;
+                background: #ffe;
+                border: 1px solid #ddd;
+                margin-top:5px;
+                overflow:hidden;
+            }
+            input:first-of-type{
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div id="container">
+            模糊查询
+            <form>
+                <textarea placeholder="在这输入"></textarea>
+                <input type="button" value="确认输入" />
+                <input type="text" id="text" placeholder="在这查询" />
+                <input type="button" value="查询" />
+            </form>
+            <div id="show">
+
+            </div>
+        </div> 
+        
+    </body>
+<script src="main.js">
+    
+</script>
+</html>

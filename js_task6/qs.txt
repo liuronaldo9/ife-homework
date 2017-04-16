@@ -1,0 +1,11 @@
+1.RegExp如何匹配中文和中文标点
+
+
+
+2.删除节点的细节
+var span = showPanel.getElementsByTagName("span");
+    var len = span.length;
+    for (var i = 0; i < len; i++) {
+        showPanel.removeChild(span[0]);
+        spanArray.pop();
+    }
