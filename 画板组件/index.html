@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="main.css" rel="stylesheet"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+
+            #container{
+                position:absolute;
+                width:500px;
+                height:300px;
+                left:50%;
+                transform:translateX(-50%);
+                background:#fbfbfb;
+                border:1px solid #ccc;
+                padding:10px;
+            }
+            canvas{
+                margin-left:20px;
+                border:1px solid #ddd;
+            }
+            .controller{
+                width:100px;
+                height:300px;
+                position:absolute;
+                left:380px;
+                top:20px;
+            }
+            .controller input{
+                width:60px;
+                margin:10px 5px;
+            }
+            #show {
+                position:relative;
+                width: 370px;
+                height: 50px;
+                background: #ffe;
+                border: 1px solid #ddd;
+                margin-top:5px;
+                overflow:hidden;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div id="container">
+            <div class="canvasDiv">
+                <canvas id="canvasLeft" width="256px" height="256px"></canvas>
+                <canvas id="canvasRight" width="14px" height="255px"></canvas>
+            </div>
+            <div class="controller">
+                <lable>R</lable><input id="R" type="number" value="255" max="255" min="0"/>
+                <lable>G</lable><input id="G" type="number" value="255" max="255" min="0"/>
+                <lable>B</lable><input id="B" type="number" value="255" max="255" min="0"/>
+                <hr />
+                <lable>H</lable><input id="H" type="number" value="359"/>
+                <lable>S</lable><input id="S" type="number" value="100"/>%
+                <lable>L</lable><input id="L" type="number" value="54"/>%
+            </div>
+        </div> 
+       
+    </body>
+<script src="main.js">
+    
+</script>
+</html>
