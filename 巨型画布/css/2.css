@@ -1,0 +1,8 @@
+body{
+    text-align:center;
+    background:#d98;
+}
+canvas{
+    cursor:pointer;
+	border:1px solid #ddd;
+}
