@@ -1,0 +1,249 @@
+body{
+    background-color:#d7e6dd;
+}
+#CONTAINER{
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+}
+header {
+    width: 100%;
+}
+#navtop-container{
+    width:1000px;
+    height:100px;
+    background:rgb(10,100,180);
+    position:relative;
+}
+#nav-right{
+    width:370px;
+    height:80px;
+    position:absolute;
+    right:0px;
+    top:20px;
+    
+}
+#nav-right a{
+    color:#fff;
+    font-size:14px;
+
+}
+#nav-right li:hover a{
+    color:rgb(50,190,180);
+}
+#nav-right ul li{
+    display:inline-block;
+    width:68px;
+    height:14px;
+    text-align:center;
+    line-height:14px;
+}
+#nav-right ul li{
+    border-right:1px solid #ddd;
+}
+#nav-right ul li#lastnavright{
+    border:none;
+}
+#nav-right #searchbar{
+    width:300px;
+    height:20px;
+    margin-top:15px;
+    margin-left:18px;
+}
+#nav-right input{
+    height:16px;
+}
+#nav-right #searchbtn:hover{
+    color:rgb(50,190,180);
+}
+
+#divideline{
+    width:1000px;
+    height:10px;
+    background-color:rgb(50,190,180);
+}
+
+#navbar{
+    width:1000px;
+    height:45px;
+    background-color:rgb(251,251,251);
+}
+#navbar a{
+    display:block;
+    color:#222;
+    font-size:14px;
+    text-align:center;
+    line-height:50px;
+}
+#navbar>ul>li{
+    float:left;
+    width:111px;
+    height:45px;
+    position:relative;
+}
+#navbar>ul>li:hover>a{
+    color:rgb(50,190,180);
+}
+#navbar ul li ul{
+    display:none;
+    position:absolute;
+    top:43px;
+    border-top:3px solid rgb(50,190,180);
+    z-index:999;
+}
+#navbar ul li ul li{
+    width:111px;
+    height:30px;
+    display:block;
+    background:rgb(251,251,251);
+    border-bottom:1px solid #ddd;
+}
+#navbar ul li ul li a{
+    display:block;
+    font-size:12px;
+    line-height:30px;
+    text-align:center;
+}
+#navbar ul li ul li:hover a{
+    color:rgb(50,190,180);
+}
+#navbar ul li ul li:hover{
+    background-color:rgb(245,245,245);
+}
+#navbar .firstul{
+    width:112px;
+    height:0px;
+}
+#navbar .lastul{
+    width:112px;
+    height:0px;
+}
+
+.main {
+    width: 1000px;
+    overflow:hidden;
+    background-color: rgb(254,254,254);
+    margin-top: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.main > .main-left{
+    width:300px;
+    height:auto;
+    padding:10px;
+    box-sizing:border-box;
+    float:left;
+}
+
+.main > .main-left h2{
+    padding-left:10px;
+    font-family:'Microsoft JhengHei';
+    font-size:24px;
+    font-weight:bolder;
+    color:rgb(10,100,180);
+    border-left:10px solid rgb(50,190,180);
+    margin-bottom:5px;
+
+}
+.main > .main-left > ul > li{
+    height:40px;
+    padding-left:22px;
+    background:rgb(10,100,180);
+    line-height:40px;
+    border-bottom:1px solid rgb(251,252,253);
+    box-sizing:border-box;
+    position:relative;
+}
+.main > .main-left > ul > li:hover{
+    background:rgb(50,190,180);
+}
+.main > .main-left > ul > li > a{
+    color:#fff;
+}
+.main > .main-left > ul > li > span{
+    width:10px;
+    height:auto;
+    display:block;
+    position:absolute;
+    right:20px;
+    top:0px;
+    color:#fff;
+}
+.main-right{
+    width:660px;
+    height:auto;
+   float:right;
+    margin-right:10px;
+}
+.main-right > .main-right-nav-container{
+    height:50px;
+    box-sizing:border-box;
+    border-bottom:3px solid rgb(50,190,180) ;
+}
+.main-right-nav{
+    float:right;
+    line-height:50px;
+}
+.main-right-nav > a{
+    color:rgb(100,110,120);
+}
+.main-right-nav > a:hover{
+    color:rgb(10,10,10);
+}
+.article>.article-title{
+    text-align:center;
+    margin-top:10px;
+    border-bottom:1px solid #ddd;
+}
+.article>.article-title h3{
+    font-size:20px;
+    line-height:40px;
+
+}
+.article>.article-title h4{
+    font-size:14px;
+    font-weight:normal;
+    line-height:30px;
+    color:#bbb;
+}
+.article>.article-body{
+    margin-top:15px;
+    padding-bottom:15px;
+    box-sizing:border-box;
+    text-indent:2em;
+    border-bottom:1px solid #ddd;
+}
+.article>.article-footer{
+    margin-top:10px;
+}
+.article>.article-footer a{
+    color:#888;
+}
+.article>.article-footer a:hover{
+    color:rgb(50,190,180);
+}
+
+
+.footer{
+    width:1000px;
+    height:100px;
+    background:#111;
+    margin-top:15px;
+    text-align:center;
+    overflow:hidden;
+}
+.footer #brand{
+    width:1000px;
+    height:50px;
+    margin-top:30px;
+    color:#ddd;
+    font-size:14px;
+    font-family:'Microsoft Yi Baiti';
+}
+
+
+
+
+
