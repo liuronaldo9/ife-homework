@@ -23,7 +23,7 @@ $(document).ready(function () {
     var imgW = $("#carousel").width();
     var imgH = imgW * 2 / 3;
     $("#carousel img").css("height", imgH + "px");  //改变图片高度
-    console.log(imgW);
+
     myFocus.set({
         id: 'carousel',//焦点图盒子ID
         pattern: 'mF_YSlider',//风格应用的名称
