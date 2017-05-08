@@ -1,6 +1,13 @@
 body{
     background-color:#d7e6dd;
 }
+.clearFix::after{
+    content:"";
+    height:0;
+    width:0;
+    display:block;
+    clear:both;
+}
 #CONTAINER{
     width:1000px;
     height:100%;
@@ -13,19 +20,30 @@ body{
         margin: 0 auto;
     }
 }
+
 #navtop-container{
     width:100%;
-    height:100px;
+
     background:rgb(10,100,180);
     position:relative;
 }
-#nav-right{
-    width:370px;
-    height:80px;
-    position:absolute;
-    right:0px;
-    top:20px;
-    
+@media (max-width:500px){
+    #logo img {
+        width: 100%;
+    } 
+}
+
+#nav-right {
+    width: 370px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+@media (max-width:500px){
+    #nav-right {
+        display:none;
+    }
 }
 #nav-right a{
     color:#fff;
@@ -75,9 +93,18 @@ body{
 #navbar a{
     display:block;
     color:#222;
-    font-size:60%;
+    font-size:14px;
     text-align:center;
     line-height:50px;
+}
+@media (max-width:500px){
+    #navbar a {
+        display: block;
+        color: #222;
+        font-size: 8px;
+        text-align: center;
+        line-height: 50px;
+    }
 }
 #navbar>ul>li{
     float:left;
@@ -105,9 +132,17 @@ body{
 }
 #navbar ul li ul li a{
     display:block;
-    font-size:100%;
+    font-size:12px;
     line-height:30px;
     text-align:center;
+}
+@media (max-width:500px) {
+    #navbar ul li ul li a {
+        display: block;
+        font-size: 6px;
+        line-height: 30px;
+        text-align: center;
+    }
 }
 #navbar ul li ul li:hover a{
     color:rgb(50,190,180);
@@ -127,8 +162,14 @@ body{
 .main{
     width:1000px;
     height:400px;
-    background-color:rgb(254,254,254);
     margin-top:15px;
+}
+@media (max-width:500px) {
+    .main {
+        width: 100%;
+       height:100%;
+        margin-top: 15px;
+    }
 }
 .main #carousel-container{
     width:600px;
@@ -138,17 +179,25 @@ body{
     box-sizing:border-box;
     overflow:hidden;
 }
+@media (max-width:500px){
+    .main #carousel-container {
+        width: 100%;
+        background: #ddd;
+        float: left;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+}
 #carousel {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
     color:#fff;
 }
 #carousel img{
-    width:600px;
-    height:400px;
-
+    width:100%;
+    height:100%;
 }
 .main #news-container{
     width:400px;
@@ -156,6 +205,16 @@ body{
     background:rgb(242,244,249);
     float:left;
     box-sizing:border-box;
+}
+@media (max-width:500px) {
+    .main #news-container {
+        width: 100%;
+        height: 100%;
+        background: rgb(242,244,249);
+        float: left;
+        box-sizing: border-box;
+        margin-top:10px;
+    }
 }
 #news-container #title {
     width: 100%;
@@ -176,7 +235,7 @@ body{
     width:auto;
     height:100%;
     font-size:14px;
-
+    vertical-align:middle;
     color:rgb(55,105,85);
     position:absolute;
     top:10px;
@@ -188,16 +247,16 @@ body{
     padding:2px;
 }
 #news {
-    width: 400px;
+    width: 100%;
     height: 328px;
     overflow: hidden;
     border-bottom: 2px solid rgb(50,190,180);
 }
 
 #news li{
-    width:360px;
+    width:90%;
     height:30px;
-    margin-left:20px;
+    margin-left:5%;
     line-height:30px;
     font-size: 14px;
     color: rgb(115,141,174);
@@ -208,7 +267,7 @@ body{
 #news a {
     display:block;
     color: rgb(115,141,174);
-    width:250px;
+    width:60%;
     height:25px;
     white-space:nowrap;
     overflow:hidden;
@@ -220,6 +279,7 @@ body{
 #news span{
     display:block;
     height:25px;
+    font-size:12px;
     color: rgb(140,160,190);
     position:absolute;
     top:0px;
@@ -234,7 +294,7 @@ body{
     display:block;
     height:33px;
     position:absolute;
-    right:30px;
+    right:5%;
     top:0px;
     line-height:35px;
     font-family:'Microsoft Uighur';
@@ -252,15 +312,68 @@ body{
     width:1000px;
     height:100px;
     background:#111;
-    margin-top:15px;
     text-align:center;
     overflow:hidden;
 }
+@media (max-width:500px) {
+    .footer {
+        width: 100%;
+        height: 100px;
+        background: #111;
+        text-align: center;
+        overflow: hidden;
+    }
+}
 .footer #brand{
-    width:1000px;
+    width:100%;
     height:50px;
     margin-top:30px;
     color:#ddd;
     font-size:14px;
     font-family:'Microsoft Yi Baiti';
+}
+
+#footer-navbar {
+    width: 1000px;
+    padding:10px;
+    margin-top: 15px;
+    box-sizing:border-box;
+    background: rgb(10,100,180);
+}
+@media (max-width:500px){
+    #footer-navbar {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        box-sizing: border-box;
+        background: rgb(10,100,180);
+    }
+
+}
+#footer-navbar img{
+    width:64px;
+}
+#footer-navbar ul{
+    display:block;
+    width:600px;
+    margin:0 auto;
+    background:#c88;
+}
+@media (max-width:500px) {
+    #footer-navbar ul {
+        display: flex;
+        width: 100%;
+        justify-content:center;
+        align-content:center;
+        flex-wrap:wrap;
+        background: #c88;
+    }
+}
+#footer-navbar li{
+    float:left;
+}
+#footer-navbar li a{
+    display:block;
+    width:100px;
+    text-align:center;
 }
