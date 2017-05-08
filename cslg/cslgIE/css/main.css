@@ -6,7 +6,13 @@ body{
     height:100%;
     margin:0 auto;
 }
-
+@media (max-width:500px){
+    #CONTAINER {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
 #navtop-container{
     width:100%;
     height:100px;
@@ -56,13 +62,13 @@ body{
 }
 
 #divideline{
-    width:1000px;
+    width:100%;
     height:10px;
     background-color:rgb(50,190,180);
 }
 
 #navbar{
-    width:1000px;
+    width:100%;
     height:45px;
     background-color:rgb(251,251,251);
 }
@@ -75,7 +81,7 @@ body{
 }
 #navbar>ul>li{
     float:left;
-    width:111px;
+    width:12.5%;
     height:45px;
     position:relative;
 }
@@ -84,13 +90,14 @@ body{
 }
 #navbar ul li ul{
     display:none;
+    width:100%;
     position:absolute;
     top:43px;
     border-top:3px solid rgb(50,190,180);
     z-index:999;
 }
 #navbar ul li ul li{
-    width:111px;
+    width:100%;
     height:30px;
     display:block;
     background:rgb(251,251,251);
@@ -109,11 +116,11 @@ body{
     background-color:rgb(245,245,245);
 }
 #navbar .firstul{
-    width:112px;
+    width:100%;
     height:0px;
 }
 #navbar .lastul{
-    width:112px;
+    width:100%;
     height:0px;
 }
 
