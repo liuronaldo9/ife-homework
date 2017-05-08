@@ -260,14 +260,13 @@ body{
     margin-left:5%;
     line-height:30px;
     font-size: 14px;
-    color: rgb(115,141,174);
     position:relative;
     border-bottom:1px dashed #444;
     box-sizing:border-box;
 }
 #news a {
     display:block;
-    color: rgb(115,141,174);
+    color: rgb(20,50,60);
     width:60%;
     height:25px;
     white-space:nowrap;
@@ -275,7 +274,7 @@ body{
     text-overflow:ellipsis;
 }
 #news a:hover{
-    color:rgb(30,56,59);
+    color:rgb(50,190,180);
 }
 #news span{
     display:block;
