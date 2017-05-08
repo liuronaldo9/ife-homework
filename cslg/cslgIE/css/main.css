@@ -340,6 +340,7 @@ body{
     box-sizing:border-box;
     background: rgb(10,100,180);
 }
+
 @media (max-width:500px){
     #footer-navbar {
         width: 100%;
@@ -359,18 +360,16 @@ body{
     margin:0 auto;
     background:#c88;
 }
+
 @media (max-width:500px) {
     #footer-navbar ul {
-        display: -ms-flexbox; /* TWEENER - IE 10 */
-         /* NEW - Chrome */
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
+
+        width: 300px;
+
         background: #c88;
     }
 }
+
 #footer-navbar li{
     float:left;
 }
