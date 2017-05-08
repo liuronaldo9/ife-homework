@@ -363,7 +363,7 @@ body{
     #footer-navbar ul {
         display: flex;
         width: 100%;
-        justify-content:center;
+        justify-content:space-between;
         align-content:center;
         flex-wrap:wrap;
         background: #c88;
