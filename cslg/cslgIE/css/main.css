@@ -340,6 +340,7 @@ body{
     margin-top: 15px;
     box-sizing:border-box;
     background: rgb(10,100,180);
+    overflow:hidden;
 }
 
 @media (max-width:500px){
@@ -352,22 +353,20 @@ body{
     }
 
 }
-#footer-navbar img{
-    width:64px;
+#footer-navbar img {
+    width: 64px;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
 #footer-navbar ul{
     display:block;
     width:600px;
     margin:0 auto;
-    background:#c88;
 }
 
 @media (max-width:500px) {
     #footer-navbar ul {
-
         width: 300px;
-
-        background: #c88;
     }
 }
 
@@ -378,4 +377,8 @@ body{
     display:block;
     width:100px;
     text-align:center;
+    color:#fff;
+}
+#footer-navbar li a:hover{
+    color:rgb(50,190,180)
 }
