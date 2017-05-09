@@ -20,7 +20,7 @@ body{
         margin: 0 auto;
     }
 }
-
+/*----------head----------- */
 #navtop-container{
     width:100%;
     background:rgb(10,100,180);
@@ -212,7 +212,7 @@ body{
     background-color:rgb(245,245,245);
 }
 
-
+/*----------main----------- */
 .main{
     width:1000px;
     height:400px;
