@@ -1,18 +1,17 @@
-$("li.dropdown").mouseover(function () {
-    $(this).addClass("open")
-}).mouseout(function () {
-    $(this).removeClass("open");
-});
 
-$(".nav-tabs a").mouseover(function () {
-    $(this).tab("show");
-});
 
 $(document).ready(function () {
     //下拉菜单滑动
     $("#navbar>ul>li").hover(function () {
         $(this).find("ul").stop().slideToggle("fast");
+
     });
+    //手机的下拉按钮
+    $("#toggle-bar").click(function () {
+        $("#navbar").toggleClass("navbar-overflow");
+        $("#toggle-bar2").fadeToggle("fast");
+    });
+
     /*
     //菜单栏字体大小
     var fontsize = $("#navbar>ul>li").width() / 8;

@@ -1,48 +1,25 @@
 body{
     background-color:#d7e6dd;
 }
-.clearFix::after{
-    content:"";
-    height:0;
-    width:0;
-    display:block;
-    clear:both;
-}
 #CONTAINER{
     width:1000px;
     height:100%;
     margin:0 auto;
 }
-@media (max-width:500px){
-    #CONTAINER {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-    }
-}
 
 #navtop-container{
-    width:100%;
+    width:1000px;
+    height:100px;
     background:rgb(10,100,180);
     position:relative;
 }
-@media (max-width:500px){
-    #logo img {
-        width: 100%;
-    } 
-}
-
-#nav-right {
-    width: 250px;
-    height: 80px;
-    position: absolute;
-    right: 0px;
-    top: 20px;
-}
-@media (max-width:500px){
-    #nav-right {
-        display:none;
-    }
+#nav-right{
+    width:370px;
+    height:80px;
+    position:absolute;
+    right:0px;
+    top:20px;
+    
 }
 #nav-right a{
     color:#fff;
@@ -54,21 +31,22 @@ body{
 }
 #nav-right ul li{
     display:inline-block;
-    margin-left:10px;
+    width:68px;
     height:14px;
     text-align:center;
     line-height:14px;
 }
-#nav-right ul li img{
-    display:inline;
-    width:16px;
-    height:16px;
+#nav-right ul li{
+    border-right:1px solid #ddd;
 }
-
+#nav-right ul li#lastnavright{
+    border:none;
+}
 #nav-right #searchbar{
     width:300px;
     height:20px;
     margin-top:15px;
+    margin-left:18px;
 }
 #nav-right input{
     height:16px;
@@ -78,13 +56,13 @@ body{
 }
 
 #divideline{
-    width:100%;
+    width:1000px;
     height:10px;
     background-color:rgb(50,190,180);
 }
 
 #navbar{
-    width:100%;
+    width:1000px;
     height:45px;
     background-color:rgb(251,251,251);
 }
@@ -95,18 +73,9 @@ body{
     text-align:center;
     line-height:50px;
 }
-@media (max-width:500px){
-    #navbar a {
-        display: block;
-        color: #222;
-        font-size: 8px;
-        text-align: center;
-        line-height: 50px;
-    }
-}
 #navbar>ul>li{
     float:left;
-    width:12.5%;
+    width:111px;
     height:45px;
     position:relative;
 }
@@ -115,14 +84,13 @@ body{
 }
 #navbar ul li ul{
     display:none;
-    width:100%;
     position:absolute;
     top:43px;
     border-top:3px solid rgb(50,190,180);
     z-index:999;
 }
 #navbar ul li ul li{
-    width:100%;
+    width:111px;
     height:30px;
     display:block;
     background:rgb(251,251,251);
@@ -134,33 +102,26 @@ body{
     line-height:30px;
     text-align:center;
 }
-@media (max-width:500px) {
-    #navbar ul li ul li a {
-        display: block;
-        font-size: 6px;
-        line-height: 30px;
-        text-align: center;
-    }
-}
 #navbar ul li ul li:hover a{
     color:rgb(50,190,180);
 }
 #navbar ul li ul li:hover{
     background-color:rgb(245,245,245);
 }
-
+#navbar .firstul{
+    width:112px;
+    height:0px;
+}
+#navbar .lastul{
+    width:112px;
+    height:0px;
+}
 
 .main{
     width:1000px;
     height:400px;
+    background-color:rgb(254,254,254);
     margin-top:15px;
-}
-@media (max-width:500px) {
-    .main {
-        width: 100%;
-       height:100%;
-        margin-top: 15px;
-    }
 }
 .main #carousel-container{
     width:600px;
@@ -170,43 +131,24 @@ body{
     box-sizing:border-box;
     overflow:hidden;
 }
-@media (max-width:500px){
-    .main #carousel-container {
-        width: 100%;
-        height:auto;
-        background: #ddd;
-        float: left;
-        box-sizing: border-box;
-        overflow: hidden;
-    }
-}
 #carousel {
-    width: 100%;
+    width: 600px;
+    height: 400px;
     position: relative;
     overflow: hidden;
     color:#fff;
 }
 #carousel img{
-    width:100%;
+    width:600px;
+    height:400px;
 
 }
-
 .main #news-container{
     width:400px;
     height:400px;
     background:rgb(242,244,249);
     float:left;
     box-sizing:border-box;
-}
-@media (max-width:500px) {
-    .main #news-container {
-        width: 100%;
-        height: 100%;
-        background: rgb(242,244,249);
-        float: left;
-        box-sizing: border-box;
-        margin-top:10px;
-    }
 }
 #news-container #title {
     width: 100%;
@@ -227,7 +169,7 @@ body{
     width:auto;
     height:100%;
     font-size:14px;
-    vertical-align:middle;
+
     color:rgb(55,105,85);
     position:absolute;
     top:10px;
@@ -239,38 +181,38 @@ body{
     padding:2px;
 }
 #news {
-    width: 100%;
+    width: 400px;
     height: 328px;
     overflow: hidden;
     border-bottom: 2px solid rgb(50,190,180);
 }
 
 #news li{
-    width:90%;
+    width:360px;
     height:30px;
-    margin-left:5%;
+    margin-left:20px;
     line-height:30px;
     font-size: 14px;
+    color: rgb(115,141,174);
     position:relative;
     border-bottom:1px dashed #444;
     box-sizing:border-box;
 }
 #news a {
     display:block;
-    color: rgb(20,50,60);
-    width:60%;
+    color: rgb(115,141,174);
+    width:250px;
     height:25px;
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
 }
 #news a:hover{
-    color:rgb(50,190,180);
+    color:rgb(30,56,59);
 }
 #news span{
     display:block;
     height:25px;
-    font-size:12px;
     color: rgb(140,160,190);
     position:absolute;
     top:0px;
@@ -285,7 +227,7 @@ body{
     display:block;
     height:33px;
     position:absolute;
-    right:5%;
+    right:30px;
     top:0px;
     line-height:35px;
     font-family:'Microsoft Uighur';
@@ -303,72 +245,15 @@ body{
     width:1000px;
     height:100px;
     background:#111;
+    margin-top:15px;
     text-align:center;
     overflow:hidden;
 }
-@media (max-width:500px) {
-    .footer {
-        width: 100%;
-        height: 100px;
-        background: #111;
-        text-align: center;
-        overflow: hidden;
-    }
-}
 .footer #brand{
-    width:100%;
+    width:1000px;
     height:50px;
     margin-top:30px;
     color:#ddd;
     font-size:14px;
     font-family:'Microsoft Yi Baiti';
-}
-
-#footer-navbar {
-    width: 1000px;
-    padding:10px;
-    margin-top: 15px;
-    box-sizing:border-box;
-    background: rgb(10,100,180);
-    overflow:hidden;
-}
-
-@media (max-width:500px){
-    #footer-navbar {
-        width: 100%;
-        padding: 10px;
-        margin-top: 15px;
-        box-sizing: border-box;
-        background: rgb(10,100,180);
-    }
-
-}
-#footer-navbar img {
-    width: 64px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-}
-#footer-navbar ul{
-    display:block;
-    width:600px;
-    margin:0 auto;
-}
-
-@media (max-width:500px) {
-    #footer-navbar ul {
-        width: 300px;
-    }
-}
-
-#footer-navbar li{
-    float:left;
-}
-#footer-navbar li a{
-    display:block;
-    width:100px;
-    text-align:center;
-    color:#fff;
-}
-#footer-navbar li a:hover{
-    color:rgb(50,190,180)
 }
