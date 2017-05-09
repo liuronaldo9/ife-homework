@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     //下拉菜单滑动
-    $("#navbar>ul>li").hover(function () {
+    $("#navbar>ul>li:not(:first)").hover(function () {
         $(this).find("ul").stop().slideToggle("fast");
 
     });
