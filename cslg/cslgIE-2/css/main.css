@@ -100,6 +100,16 @@ body{
     font-size:14px;
     text-align:center;
     line-height:45px;
+    
+}
+#navbar > ul > li > span{
+    display:block;
+    width:0;
+    height:20px;
+    border-right:1px solid rgb(50,190,180);
+    position:absolute;
+    top:12.5px;
+    right:0;
 }
 @media (max-width:500px){
     #navbar a {
@@ -109,6 +119,9 @@ body{
         text-align: left;
         text-indent:1em;
         line-height: 45px;
+    }
+    #navbar > ul > li > span {
+        display: none;
     }
 }
 #navbar>ul>li{
@@ -165,7 +178,7 @@ body{
     display:none;
     width:100%;
     position:absolute;
-    margin-top:-3px;
+    margin-top:-2px;
     border-top:3px solid rgb(50,190,180);
     z-index:999;
 }
