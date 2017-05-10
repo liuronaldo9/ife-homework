@@ -321,44 +321,89 @@ body{
     color:rgb(10,10,10);
 }
 .main-right > .title-list{
-    border-bottom:3px solid rgb(50,190,180) ;
+    
 }
-.main-right > .title-list li{
-    height:40px;
-    line-height:40px;
-    background:#fff;
+.main-right > .title-list >ul{
+    
+}
+.main-right > .title-list > ul > li.section{
+    float:left;
+    margin:3%;
     box-sizing:border-box;
-    border-bottom:1px dashed #444;
+    width:44%;
+    height:214px;
+    box-shadow:0 0 2px 1px #ccc;
+    background:rgb(250,250,252);
+}
+@media (max-width:500px){
+    .main-right > .title-list > ul > li.section {
+        width: 100%;
+        margin: 3% 0;
+    }
+}
+.main-right div.title{
+    height:36px;
+    background:#cde;
+    border-bottom:1px solid rgb(50,190,180)
+}
+.main-right div.title span.h{
+    font-family:'Microsoft JhengHei';
+    font-size:20px;
+    font-weight:600;
+    line-height:36px;
+    margin-left:5px;
+}
+.main-right div.title a.more{
+    float:right;
+    line-height:36px;
+    color:#666;
+    margin-right:5px;
+}
+.main-right div.title a.more:hover{
+    color:rgb(50,190,180);
+}
+.main-right ul.con{
+    padding:5px 0;
+}
+.main-right ul.con li{
+    height:28px;
+    line-height:28px;
+    
+    box-sizing:border-box;
+    border-bottom:1px dashed #bbb;
     position:relative;
 }
-.main-right > .title-list li > a{
-    margin-left:10px;
-    display:block;
+.main-right ul.con li a {
+    margin-left: 10px;
+    display: block;
     color: rgb(50,50,50);
-    width:65%;
-    height:40px;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
+    width: 65%;
+    height: 28px;
+    font-size:14px;
+    font-weight:300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.main-right > .title-list li > a > span{
+.main-right ul.con li a span{
     position:absolute;
     width:0;
     height:0;
-    left:0px;
-    
-    top:15px;
+    left:3px;
+    top:9px;
     border:5px solid;
     border-color:transparent transparent transparent  #e88 ;
 }
-.main-right > .title-list li > a:hover{
+.main-right ul.con li a:hover{
     color:#f35577;
 }
-.main-right > .title-list li > span{
+.main-right ul.con li span{
     display:block;
-    height:40px;
+    height:28px;
     font-size:12px;
-    color:#444;
+    font-weight:200;
+    line-height:28px;
+    color: rgb(50,50,50);
     position:absolute;
     top:0px;
     right:10px;
