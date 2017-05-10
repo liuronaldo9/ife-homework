@@ -103,6 +103,7 @@
     height:214px;
     box-shadow:0 0 2px 1px #ccc;
     background:rgb(250,250,252);
+    border:1px solid rgb(220,220,220);
 }
 @media (max-width:500px){
     .main-right > .title-list > ul > li.section {
