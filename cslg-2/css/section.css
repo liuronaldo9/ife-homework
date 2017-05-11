@@ -17,7 +17,7 @@
 }
 
 .main > .main-left{
-    width:300px;
+    width:22%;
     height:auto;
     box-sizing:border-box;
     float:left;
@@ -63,10 +63,10 @@
     color:#fff;
 }
 .main-right{
-    width:660px;
+    width:72%;
     height:auto;
     float:left;
-    margin-left:10px;
+    margin-left:3%;
 }
 @media (max-width:500px){
     .main-right {
