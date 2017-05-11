@@ -27,7 +27,7 @@ body {
 #navtop-container {
     width: 100%;
     height:110px;
-    background: url(../image/bg14.png) no-repeat;
+    background: url(../image/bglast.png) no-repeat;
     position: relative;
 }
 
@@ -111,12 +111,6 @@ body {
 
 #nav-right #searchbtn:hover {
     color: rgb(30,130,215);
-}
-
-#divideline {
-    width: 100%;
-    height:0px;
-    background-color: rgb(50,190,180);
 }
 
 #navbar {
