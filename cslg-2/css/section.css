@@ -97,7 +97,7 @@
 }
 .main-right > .title-list > ul > li.section{
     float:left;
-    margin-top:15px;
+    margin-top:3%;
     box-sizing:border-box;
     width:48%;
     height:214px;
@@ -105,10 +105,19 @@
     background:rgb(250,250,252);
     border:1px solid rgb(220,220,220);
 }
+/*¸újs½»»¥*/
+.section-margin-even {
+    margin-left:0;
+    margin-right:2%;
+}
+.section-margin-odd {
+    margin-left: 2%;
+    margin-right: 0;
+}
 @media (max-width:500px){
     .main-right > .title-list > ul > li.section {
         width: 100%;
-        margin: 3% 0;
+        
     }
 }
 .main-right div.title{
