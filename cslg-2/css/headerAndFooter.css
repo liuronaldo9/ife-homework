@@ -27,7 +27,7 @@ body {
 #navtop-container {
     width: 100%;
     height:110px;
-    background: url(../image/bglast.png) no-repeat;
+    background: url(../image/bg.png) no-repeat;
     position: relative;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 #nav-right li:hover a {
-    color: rgb(30,130,215);
+    color:rgb(140,100,180);
     text-decoration:underline;
 }
 
@@ -78,11 +78,13 @@ body {
     line-height: 14px;
 }
 
-    #nav-right ul li img {
-        display: inline;
-        width: 16px;
-        height: 16px;
-    }
+#nav-right ul li img {
+    display: inline;
+    width: 16px;
+    height: 16px;
+    margin-right:5px;
+    vertical-align:central;
+}
 
 #nav-right #searchbar {
     width: 300px;
@@ -110,7 +112,7 @@ body {
 }
 
 #nav-right #searchbtn:hover {
-    color: rgb(30,130,215);
+    color: rgb(140,100,180);
 }
 
 #navbar {
@@ -277,8 +279,8 @@ body {
 /*----------footer----------- */
 .footer {
     width: 1000px;
-    height: 100px;
-    background: #111;
+    height: 80px;
+    background: rgb(10,70,130);
     margin-top: 15px;
     text-align: center;
     overflow: hidden;
@@ -293,8 +295,8 @@ body {
 .footer #brand {
     width: 100%;
     height: 50px;
-    margin-top: 30px;
-    color: #ddd;
+    margin-top: 20px;
+    color: #ccc;
     font-size: 14px;
     font-family: 'Microsoft Yi Baiti';
 }
