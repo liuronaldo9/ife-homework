@@ -106,12 +106,14 @@
     line-height:30px;
     color:#bbb;
 }
-.article>.article-body{
-    margin-top:15px;
-    padding-bottom:15px;
-    box-sizing:border-box;
-    text-indent:2em;
-    border-bottom:1px solid #ddd;
+.article > .article-body {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    text-indent: 2em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    border-bottom: 1px solid #ddd;
 }
 .article>.article-footer{
     margin-top:10px;

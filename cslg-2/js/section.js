@@ -15,5 +15,16 @@ $(document).ready(function () {
     for (var i = 0; i < ul.length; i++) {
         ul[i].lastElementChild.style.border="none";
     }
+    //even odd section margin
+    var section = document.getElementsByClassName("section");
+    for (var i = 0; i < section.length; i++) {
+        if (i % 2 === 0) {
+            section[i].style.marginLeft = "0";
+            section[i].style.marginRight = "2%";
+        } else {
+            section[i].style.marginLeft = "2%";
+            section[i].style.marginRight = "0";
+        }
+    }
     
 });
